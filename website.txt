@@ -1,0 +1,22 @@
+<div style='font-family:monospace'><b>txtweb</b> — serve a website directly from your domain’s DNS TXT record.
+
+How it works:
+1. Create a DNS A record for your (sub)domain pointing to <b>95.217.246.14</b>
+2. Add a TXT record at _txtweb.{your-(sub)domain} with the content you 
+   want to serve
+3. (Optional) Add a TXT record at _txtweb_cfg.{your-(sub)domain} to configure 
+   rendering options (semicolon-separated), 
+
+    Supported keys:
+    - <i>content-type</i> - Content-Type header
+    - <i>html-wrap</i> - wrap output in standard HTML tags (true/false)
+    - <i>html-align</i> - content alignment (top-left|top-right|bottom-left|bottom-right|center)
+    - <i>html-max-width</i> - maximum content width
+    - <i>html-bg</i> - background color
+    - <i>html-fg</i> - text color
+
+    example: <i>html-wrap=true;html-align=center;html-bg=#ffc300</i>
+
+Created by: <a href='https://lefelys.com'>lefelys.com</a>
+<a href='https://github.com/lefelys/txtweb'>Source</a>
+</div>
